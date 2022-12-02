@@ -3,7 +3,7 @@ Bash script to demonstrate Alma and Ubuntu Linux LXC Containers and Destruction
 
 ## Purpose
 
-I wanted to have reference bash commands to launch both Ubuntu and Alma Linux 9 LXC 4.0 Containers and I wanted to the use the 'lxc' command line interface to LXD.
+I wanted to have reference bash commands to launch both Ubuntu and Alma Linux 9 LXC 4.0 Containers and I wanted to use the 'lxc' command line interface to LXD 4.0.
 
 12.01.2022  On Ubuntu Linux labtop, I installed latest lxc, lxd and zfsutils-linux packages.
 
