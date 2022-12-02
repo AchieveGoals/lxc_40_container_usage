@@ -1,0 +1,16 @@
+All OSHowTo Scripts are copyrighted by Larry Timmins.
+
+Non-commercial use is acceptable provided this NOTICE file accompanies all full or partial use or link backs to this repository.
+
+Author:  Larry Timmins, Garden City NY
+         larry.timmins@gmail.com
+         achieveyournextgoal@gmail.com
+         
+Purpose: I wanted to have reference bash commands to launch both Ubuntu and Alma Linux 9 LXC 4.0 Containers
+     and I wanted to the use the 'lxc' command line interface to LXD.
+     
+     After running lxd init, I noticed the traditional lxc-destroy, and other commands didn't work.
+     
+     This script provides the updated commands needed after performing lxd init and selecting the recommended 4.0 version.
+     
+     Comments welcome.
