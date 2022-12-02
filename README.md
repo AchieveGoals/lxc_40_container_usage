@@ -11,10 +11,15 @@ When I ran ```lxd init```, I selected version 4.0 over 3.0.
 
 After running lxd init, I noticed the traditional lxc-destroy, and other commands didn't work.
 
-## BASH SCRIPTS FOR DEMOSTRATING LIFE CYCLE USE OF LXC CLI for LXD 4.0
+## BASH SCRIPTS FOR DEMO LIFE CYCLE USE OF LXC CLI for LXD 4.0
 
 1. "acloud_vs_ucloud_lifecycle.sh" - This script provides the updated commands needed after performing lxd init and selecting the recommended 4.0 version.
-
+2. Creates Alma Linux 9 Cloud LXC container
+3. Creates Ubuntu Linux 20 / Fossa Focal LXC Container
+4. Uses ```lxc exec``` to run similar commands against both Alma Linux and Ubuntu Linux 
+5. Make liberal use of ```lxc ls``` to illustrate new containers 
+6. Complete life cycle by removing created LXC containers after last bash commands run against containers
+7. Note:  Updated to replace ```lxc-destroy -n name``` with ```lxc delete <containername> --force```
 ## Comments welcome.
 
 ## TODO:
