@@ -10,7 +10,7 @@ https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-serve
 
 ## OUCH (BANDAID) II
 
-Seems like Canonical will still port ubuntu and ubuntu-daily access, but is not longer a global Linux player. 
+Seems like Canonical will still support ubuntu and ubuntu-daily access, but is not longer a global Linux player.
 ```
 tim@entwash:~/vc/2024$ lxc remote list
 +-----------------+------------------------------------------+---------------+-------------+--------+--------+
@@ -24,6 +24,10 @@ tim@entwash:~/vc/2024$ lxc remote list
 +-----------------+------------------------------------------+---------------+-------------+--------+--------+
 | ubuntu-daily    | https://cloud-images.ubuntu.com/daily    | simplestreams | none        | YES    | YES    |
 +-----------------+------------------------------------------+---------------+-------------+--------+--------+
+```
+
+So this no longer works (i.e. images no longer maps to https://images.linuxcontainers.org)
+```
 tim@entwash:~/vc/2024$ lxc launch images:almalinux/9/cloud a9
 ```
 
