@@ -20,8 +20,19 @@ lxc exec myc22 -- bash -c "uname -a; hosiname; df -h | grep -v snap"
 lxc exec myc20 -- bash -c "cat /etc/os-release | grep PRETTY_NAME"
 lxc exec myc22 -- bash -c "cat /etc/os-release | grep PRETTY_NAME"
 
-lxc ls
+# Optional - full interactive shell to container until you hit exit
+lxc exec myc22 -- /bin/bash 
+# gives prompt: root@myc22:~# 
+# until you type exit
+# example session:
+#  root@myc22:~# apt list | grep installed | wc -l
+#  WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+#  574
+#  root@myc22:~# exit
+#  exit
+#  tim@entwash:~/vc/2024/ubuntu-lts$
 
+#-- clean up - recommended on ailse lxc
 #lxc-destroy -n myc20
 #lxc-destroy -n myc22
 
