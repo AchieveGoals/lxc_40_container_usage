@@ -1,6 +1,13 @@
 # lxc_40_container_usage
 Bash script to demonstrate Alma and Ubuntu Linux LXC Containers and Destruction
 
+## OUCH LXD DROPPED ACCES TO IMAGES
+Bad news -- as a Canonical staff member left, Canonical failed to pick up the investment in the community as of November.  To their credit, Linux Containers.org kept up access until very recently.
+
+My luck that I just found out today (3/27/2024) via this link after images failed to load: 
+
+https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-server/18479
+
 ## Purpose
 
 I wanted to have reference bash commands to launch both Ubuntu and Alma Linux 9 LXC 4.0 Containers and I wanted to use the 'lxc' command line interface to LXD 4.0.
