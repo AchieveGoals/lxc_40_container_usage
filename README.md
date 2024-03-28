@@ -8,6 +8,26 @@ My luck that I just found out today (3/27/2024) via this link after images faile
 
 https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-server/18479
 
+## OUCH (BANDAID) II
+
+Seems like Canonical will still port ubuntu and ubuntu-daily access, but is not longer a global Linux player. 
+```
+tim@entwash:~/vc/2024$ lxc remote list
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+|      NAME       |                   URL                    |   PROTOCOL    |  AUTH TYPE  | PUBLIC | STATIC |
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+| images          | https://images.linuxcontainers.org       | simplestreams | none        | YES    | NO     |
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+| local (current) | unix://                                  | lxd           | file access | NO     | YES    |
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+| ubuntu          | https://cloud-images.ubuntu.com/releases | simplestreams | none        | YES    | YES    |
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+| ubuntu-daily    | https://cloud-images.ubuntu.com/daily    | simplestreams | none        | YES    | YES    |
++-----------------+------------------------------------------+---------------+-------------+--------+--------+
+tim@entwash:~/vc/2024$ lxc launch images:almalinux/9/cloud a9
+```
+
+
 ## Purpose
 
 I wanted to have reference bash commands to launch both Ubuntu and Alma Linux 9 LXC 4.0 Containers and I wanted to use the 'lxc' command line interface to LXD 4.0.
