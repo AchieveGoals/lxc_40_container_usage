@@ -14,4 +14,22 @@ lxc ls
 lxc exec myc20 -- bash -c "cat /etc/os-release"
 lxc exec myc22 -- bash -c "cat /etc/os-release"
 
+# additional commands
+lxc exec myc20 -- bash -c "uname -a; hostname; df -h | grep -v snap"
+lxc exec myc22 -- bash -c "uname -a; hosiname; df -h | grep -v snap"
+lxc exec myc20 -- bash -c "cat /etc/os-release | grep PRETTY_NAME"
+lxc exec myc22 -- bash -c "cat /etc/os-release | grep PRETTY_NAME"
 
+lxc ls
+
+#lxc-destroy -n myc20
+#lxc-destroy -n myc22
+
+lxc ls
+lxc delete myc20 --force
+lxc ls
+lxc delete myc22 --force
+lxc ls
+
+lxc ls
+date
