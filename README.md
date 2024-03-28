@@ -1,6 +1,8 @@
 # lxc_40_container_usage
 Bash script to demonstrate Alma and Ubuntu Linux LXC Containers and Destruction
 
+### Note: "exclusive_ubuntu_lxc_example.sh" gives Ubuntu users way to still launch Ubuntu only images.
+
 ## OUCH LXD DROPPED ACCESS TO IMAGES
 Bad news -- as a Canonical staff member left, Canonical failed to pick up the investment in the community as of November.  To their credit, Linux Containers.org kept up access until very recently.
 
@@ -11,6 +13,9 @@ https://discuss.linuxcontainers.org/t/important-notice-for-lxd-users-image-serve
 ## OUCH (BANDAID) II
 
 Seems like Canonical will still support ubuntu and ubuntu-daily access, but is not longer a global Linux player.
+
+All UBuntu references to /containers/lxc and /containers/lxd yield HTTP 40x errors 
+
 ```
 tim@entwash:~/vc/2024$ lxc remote list
 +-----------------+------------------------------------------+---------------+-------------+--------+--------+
