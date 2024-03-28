@@ -1,7 +1,7 @@
 # lxc_40_container_usage
 Bash script to demonstrate Alma and Ubuntu Linux LXC Containers and Destruction
 
-## OUCH LXD DROPPED ACCES TO IMAGES
+## OUCH LXD DROPPED ACCESS TO IMAGES
 Bad news -- as a Canonical staff member left, Canonical failed to pick up the investment in the community as of November.  To their credit, Linux Containers.org kept up access until very recently.
 
 My luck that I just found out today (3/27/2024) via this link after images failed to load: 
