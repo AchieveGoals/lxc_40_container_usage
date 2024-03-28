@@ -30,6 +30,37 @@ So this no longer works (i.e. images no longer maps to https://images.linuxconta
 ```
 tim@entwash:~/vc/2024$ lxc launch images:almalinux/9/cloud a9
 ```
+## OUCH (BANDAID) III  - 2024-03-28
+So much for cross-platform support agreement with Canonical and Linuxcontaimers.org
+
+### GOOD NEWS - you can still spin up Ubuntu (see 20.04 and 22.04 examples)
+
+```
+tim@entwash:~/vc/2024/ubuntu-lts$ lxc launch ubuntu:20.04 myc20
+Creating myc20
+Starting myc20                              
+tim@entwash:~/vc/2024/ubuntu-lts$ lxc ls
++-------+---------+---------------------+------+-----------+-----------+
+| NAME  |  STATE  |        IPV4         | IPV6 |   TYPE    | SNAPSHOTS |
++-------+---------+---------------------+------+-----------+-----------+
+| myc20 | RUNNING | 10.117.122.9 (eth0) |      | CONTAINER | 0         |
++-------+---------+---------------------+------+-----------+-----------+
+tim@entwash:~/vc/2024/ubuntu-lts$
+tim@entwash:~/vc/2024/ubuntu-lts$ lxc launch ubuntu:22.04 myc22
+Creating myc22
+Starting myc22                                
+tim@entwash:~/vc/2024/ubuntu-lts$ lxc ls
++-------+---------+----------------------+------+-----------+-----------+
+| NAME  |  STATE  |         IPV4         | IPV6 |   TYPE    | SNAPSHOTS |
++-------+---------+----------------------+------+-----------+-----------+
+| myc20 | RUNNING | 10.117.122.9 (eth0)  |      | CONTAINER | 0         |
++-------+---------+----------------------+------+-----------+-----------+
+| myc22 | RUNNING | 10.117.122.15 (eth0) |      | CONTAINER | 0         |
++-------+---------+----------------------+------+-----------+-----------+
+tim@entwash:~/vc/2024/ubuntu-lts$ 
+
+
+```
 
 
 ## Purpose
